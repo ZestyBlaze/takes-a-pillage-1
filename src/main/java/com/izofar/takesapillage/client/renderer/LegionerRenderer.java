@@ -14,7 +14,7 @@ public class LegionerRenderer extends IllagerRenderer<Legioner> {
 
     public LegionerRenderer(EntityRendererProvider.Context context) {
         super(context, new LegionerModel(context.bakeLayer(ModelLayers.PILLAGER)), 0.5F);
-        this.addLayer(new ItemInHandLayer<>(this, context.getItemInHandRenderer()));
+        this.addLayer(new ItemInHandLayer<>(this));
         this.model.getHat().visible = true;
     }
 
